@@ -22,7 +22,7 @@ fetchMyIP((error, ip) => {
       }
 
       nextISSTimesForMyLocation(data, (passes) => {
-        console.log(passes)
+        console.log(passes);
       });
     
       // console.log(`results from fetchFlyover:\n${(JSON.stringify(data))}`);

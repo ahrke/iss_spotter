@@ -70,12 +70,12 @@ const fetchFlyOverTime = (coords, callback) => {
 const nextISSTimesForMyLocation = (flyovertimes, callback) => {
   let passes = [];
 
-  for (pass in flyovertimes) {
-    passes.push(`${Date(flyovertimes[pass].risetime)} for ${flyovertimes[pass].duration} seconds`)
+  for (let pass in flyovertimes) {
+    passes.push(`Next pass at ${Date(flyovertimes[pass].risetime)} for ${flyovertimes[pass].duration} seconds!`);
   }
 
   callback(passes);
-}
+};
 
 module.exports = {
   fetchCoordsByIP,
