@@ -24,7 +24,7 @@ const fetchMyIP = function(callback) {
 };
 
 const fetchCoordsByIP = (ip, callback) => {
-  const vigilantURL = 'https://ipvigilante.com/8.8.8.8';
+  const vigilantURL = 'https://ipvigilante.com/' + ip;
   
   request(vigilantURL, (error, response, body) => {
     if (error) {
